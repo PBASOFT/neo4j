@@ -1,0 +1,198 @@
+OpenJDK 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
+2021-05-19 11:59:47.436+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.transaction_advertised_address Neo4j automatically set it to 6001 to match causal_clustering.transaction_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.437+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.raft_advertised_address Neo4j automatically set it to 7001 to match causal_clustering.raft_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.438+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.discovery_advertised_address Neo4j automatically set it to 5001 to match causal_clustering.discovery_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.438+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.bolt.advertised_address Neo4j automatically set it to 7688 to match dbms.connector.bolt.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.438+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.http.advertised_address Neo4j automatically set it to 7475 to match dbms.connector.http.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.438+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.https.advertised_address Neo4j automatically set it to 3475 to match dbms.connector.https.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 11:59:47.447+0000 INFO  Starting...
+2021-05-19 11:59:49.853+0000 INFO  ======== Neo4j 4.2.6 ========
+2021-05-19 11:59:52.215+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:02.239+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:12.239+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:22.299+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:32.389+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:42.403+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:00:52.500+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:02.504+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:12.511+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:22.582+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:32.582+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:42.678+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:01:52.775+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:02.849+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:12.859+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:22.890+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:32.903+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:42.955+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:02:52.970+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:03.066+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:13.158+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:23.235+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:33.241+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:43.337+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:03:53.362+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:03.365+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:13.369+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:23.457+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:33.535+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:43.541+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:04:57.969+0000 ERROR Failed to start Neo4j on dbms.connector.http.listen_address, a socket address. If missing port or hostname it is acquired from dbms.default_listen_address.
+java.lang.RuntimeException: Error starting Neo4j database server at /Users/sebastian/Documents/dbd/Neo4j/Core-02/data/databases
+	at org.neo4j.graphdb.facade.DatabaseManagementServiceFactory.startDatabaseServer(DatabaseManagementServiceFactory.java:207) ~[neo4j-4.2.6.jar:4.2.6]
+	at org.neo4j.graphdb.facade.DatabaseManagementServiceFactory.build(DatabaseManagementServiceFactory.java:163) ~[neo4j-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.core.CoreGraphDatabase.createManagementService(CoreGraphDatabase.java:38) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.core.CoreGraphDatabase.<init>(CoreGraphDatabase.java:30) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.server.enterprise.EnterpriseManagementServiceFactory.createManagementService(EnterpriseManagementServiceFactory.java:34) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.server.enterprise.EnterpriseBootstrapper.createNeo(EnterpriseBootstrapper.java:20) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at org.neo4j.server.NeoBootstrapper.start(NeoBootstrapper.java:134) [neo4j-4.2.6.jar:4.2.6]
+	at org.neo4j.server.NeoBootstrapper.start(NeoBootstrapper.java:90) [neo4j-4.2.6.jar:4.2.6]
+	at com.neo4j.server.enterprise.EnterpriseEntryPoint.main(EnterpriseEntryPoint.java:25) [neo4j-enterprise-4.2.6.jar:4.2.6]
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'com.neo4j.dbms.ClusteredDbmsReconcilerModule@47666b39' was successfully initialized, but failed to start. Please see the attached cause exception "Failed to join or bootstrap a raft group with id RaftId{00000000} and members DatabaseCoreTopology{DatabaseId{00000000} []} in time. Please restart the cluster.".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:463) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:110) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.graphdb.facade.DatabaseManagementServiceFactory.startDatabaseServer(DatabaseManagementServiceFactory.java:198) ~[neo4j-4.2.6.jar:4.2.6]
+	... 8 more
+Caused by: org.neo4j.dbms.api.DatabaseManagementException: A triggered DbmsReconciler job failed with the following cause
+	at com.neo4j.dbms.ReconcilerResult.join(ReconcilerResult.java:57) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.StartupOperator.startSystem(StartupOperator.java:64) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.StandaloneDbmsReconcilerModule.startInitialDatabases(StandaloneDbmsReconcilerModule.java:97) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.StandaloneDbmsReconcilerModule.start(StandaloneDbmsReconcilerModule.java:87) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:442) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:110) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.graphdb.facade.DatabaseManagementServiceFactory.startDatabaseServer(DatabaseManagementServiceFactory.java:198) ~[neo4j-4.2.6.jar:4.2.6]
+	... 8 more
+Caused by: org.neo4j.dbms.api.DatabaseManagementException: Unable to start database `DatabaseId{00000000[system]}`
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:68) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:30) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.forSingleDatabase(MultiDatabaseManager.java:141) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.startDatabase(MultiDatabaseManager.java:119) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransitionAction(Transition.java:101) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransition(Transition.java:88) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:355) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$12(DbmsReconciler.java:324) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.namedJob(DbmsReconciler.java:335) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitions(DbmsReconciler.java:325) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$10(DbmsReconciler.java:310) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.lifecycle.LifecycleAdapter$3@5a916ae7' was successfully initialized, but failed to start. Please see the attached cause exception "Failed to join or bootstrap a raft group with id RaftId{00000000} and members DatabaseCoreTopology{DatabaseId{00000000} []} in time. Please restart the cluster.".
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:463) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:110) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.common.ClusteredDatabase.start(ClusteredDatabase.java:39) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:64) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:30) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.forSingleDatabase(MultiDatabaseManager.java:141) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.startDatabase(MultiDatabaseManager.java:119) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransitionAction(Transition.java:101) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransition(Transition.java:88) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:355) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$12(DbmsReconciler.java:324) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.namedJob(DbmsReconciler.java:335) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitions(DbmsReconciler.java:325) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$10(DbmsReconciler.java:310) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+Caused by: java.util.concurrent.TimeoutException: Failed to join or bootstrap a raft group with id RaftId{00000000} and members DatabaseCoreTopology{DatabaseId{00000000} []} in time. Please restart the cluster.
+	at com.neo4j.causalclustering.identity.RaftBinder$BindingConditions.allowContinue(RaftBinder.java:415) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.identity.RaftBinder$BindingConditions.allowContinueBinding(RaftBinder.java:395) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.identity.RaftBinder.bindToInitialRaftGroup(RaftBinder.java:211) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.identity.RaftBinder.getBoundState(RaftBinder.java:150) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.identity.RaftBinder.bindToRaft(RaftBinder.java:142) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.core.CoreBootstrap.bindAndStartMessageHandler(CoreBootstrap.java:77) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.core.CoreBootstrap.perform(CoreBootstrap.java:62) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifecycleAdapter$3.start(LifecycleAdapter.java:86) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:442) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:110) ~[neo4j-common-4.2.6.jar:4.2.6]
+	at com.neo4j.causalclustering.common.ClusteredDatabase.start(ClusteredDatabase.java:39) ~[neo4j-causal-clustering-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:64) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.ClusteredMultiDatabaseManager.startDatabase(ClusteredMultiDatabaseManager.java:30) ~[neo4j-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.forSingleDatabase(MultiDatabaseManager.java:141) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.database.MultiDatabaseManager.startDatabase(MultiDatabaseManager.java:119) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransitionAction(Transition.java:101) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.Transition$Prepared.doTransition(Transition.java:88) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:355) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitionStep(DbmsReconciler.java:356) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$12(DbmsReconciler.java:324) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.namedJob(DbmsReconciler.java:335) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.doTransitions(DbmsReconciler.java:325) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at com.neo4j.dbms.DbmsReconciler.lambda$doTransitions$10(DbmsReconciler.java:310) ~[neo4j-dbms-enterprise-4.2.6.jar:4.2.6]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) ~[?:?]
+2021-05-19 12:04:57.970+0000 INFO  Neo4j Server shutdown initiated by request
+2021-05-19 12:04:57.970+0000 INFO  Stopped.
+OpenJDK 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
+2021-05-19 12:11:29.505+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.transaction_advertised_address Neo4j automatically set it to 6001 to match causal_clustering.transaction_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.506+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.raft_advertised_address Neo4j automatically set it to 7001 to match causal_clustering.raft_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.507+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.discovery_advertised_address Neo4j automatically set it to 5001 to match causal_clustering.discovery_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.507+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.bolt.advertised_address Neo4j automatically set it to 7688 to match dbms.connector.bolt.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.507+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.http.advertised_address Neo4j automatically set it to 7475 to match dbms.connector.http.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.507+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.https.advertised_address Neo4j automatically set it to 6475 to match dbms.connector.https.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:29.513+0000 INFO  Starting...
+2021-05-19 12:11:31.634+0000 INFO  ======== Neo4j 4.2.6 ========
+2021-05-19 12:11:33.648+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:11:43.732+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:11:49.605+0000 INFO  Database 'system' is waiting for bootstrap by other instance...
+2021-05-19 12:12:19.276+0000 INFO  Connected to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:12:19.538+0000 INFO  Started downloading snapshot for database 'system'...
+2021-05-19 12:12:31.000+0000 INFO  Download of snapshot for database 'system' complete.
+2021-05-19 12:12:34.776+0000 INFO  Database 'neo4j' is waiting for a total of 3 core members...
+2021-05-19 12:12:34.989+0000 INFO  Database 'neo4j' is waiting for bootstrap by other instance...
+2021-05-19 12:13:04.241+0000 INFO  Started downloading snapshot for database 'neo4j'...
+2021-05-19 12:13:13.933+0000 INFO  Download of snapshot for database 'neo4j' complete.
+2021-05-19 12:13:15.984+0000 INFO  Sending metrics to CSV file at /Users/sebastian/Documents/dbd/Neo4j/Core-02/metrics
+2021-05-19 12:13:16.035+0000 INFO  Bolt enabled on localhost:7688.
+2021-05-19 12:13:17.227+0000 INFO  Connected to localhost/127.0.0.1:7002 [raft version:3.0]
+2021-05-19 12:13:17.457+0000 INFO  Remote interface available at http://localhost:7475/
+2021-05-19 12:13:17.457+0000 INFO  Started.
+2021-05-19 12:17:41.888+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:17:41.911+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:01.888+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:01.916+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:27.271+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:27.301+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:35.548+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:18:35.575+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:20:02.423+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:20:02.451+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:20:18.736+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:20:18.758+0000 WARN  The client is unauthorized due to authentication failure.
+2021-05-19 12:21:11.722+0000 INFO  Lost connection to localhost/127.0.0.1:7002 [raft version:3.0]
+2021-05-19 12:21:26.876+0000 INFO  Neo4j Server shutdown initiated by request
+2021-05-19 12:21:26.876+0000 INFO  Stopping...
+2021-05-19 12:21:32.687+0000 INFO  Lost connection to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:21:32.987+0000 INFO  Stopped.
+OpenJDK 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
+2021-05-19 12:25:20.648+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.transaction_advertised_address Neo4j automatically set it to 6001 to match causal_clustering.transaction_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.649+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.raft_advertised_address Neo4j automatically set it to 7001 to match causal_clustering.raft_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.649+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.discovery_advertised_address Neo4j automatically set it to 5001 to match causal_clustering.discovery_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.650+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.bolt.advertised_address Neo4j automatically set it to 7688 to match dbms.connector.bolt.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.650+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.http.advertised_address Neo4j automatically set it to 7475 to match dbms.connector.http.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.650+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.https.advertised_address Neo4j automatically set it to 6475 to match dbms.connector.https.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:20.655+0000 INFO  Starting...
+2021-05-19 12:25:22.560+0000 INFO  ======== Neo4j 4.2.6 ========
+2021-05-19 12:25:54.398+0000 INFO  Bound database 'system' to raft with id '00000000-0000-0000-0000-000000000001' as member id '79d0372d-12cb-41f0-af20-aec83f781283', found on disk.
+2021-05-19 12:25:56.068+0000 INFO  Bound database 'neo4j' to raft with id '1d7adb92-8ec0-4e9b-9b35-991cc63cad18' as member id '79d0372d-12cb-41f0-af20-aec83f781283', found on disk.
+2021-05-19 12:25:57.819+0000 INFO  Sending metrics to CSV file at /Users/sebastian/Documents/dbd/Neo4j/Core-02/metrics
+2021-05-19 12:25:57.852+0000 INFO  Bolt enabled on localhost:7688.
+2021-05-19 12:25:58.587+0000 INFO  Connected to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:25:58.975+0000 INFO  Remote interface available at http://localhost:7475/
+2021-05-19 12:25:58.988+0000 INFO  Started.
+2021-05-19 12:26:05.056+0000 INFO  Connected to localhost/127.0.0.1:7002 [raft version:3.0]

@@ -1,0 +1,37 @@
+2021-05-19 12:12:01.592+0000 INFO  Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+2021-05-19 12:12:01.600+0000 INFO  Setting up initial user from defaults: neo4j
+2021-05-19 12:12:01.600+0000 INFO  Creating new user 'neo4j' (passwordChangeRequired=true, suspended=false)
+2021-05-19 12:12:01.723+0000 INFO  Setting version for 'security-users' to 2
+2021-05-19 12:12:01.759+0000 INFO  After initialization of system graph model component 'security-users' have version 2 and status CURRENT
+2021-05-19 12:12:01.788+0000 INFO  Performing postInitialization step for component 'security-users' with version 2 and status CURRENT
+2021-05-19 12:12:02.248+0000 INFO  Initializing system graph model for component 'security-privileges' with version -1 and status UNINITIALIZED
+2021-05-19 12:12:02.250+0000 INFO  Initializing security model with 6 roles
+2021-05-19 12:12:02.811+0000 INFO  Setting version for 'security-privileges' to 4
+2021-05-19 12:12:02.838+0000 INFO  Upgrading 'security-privileges' version property from 4 to 5
+2021-05-19 12:12:02.877+0000 INFO  Upgrading 'security-privileges' version property from 5 to 6
+2021-05-19 12:12:02.905+0000 INFO  Upgrading 'security-privileges' version property from 6 to 7
+2021-05-19 12:12:02.906+0000 INFO  Upgrading 'security-privileges' version property from 7 to 8
+2021-05-19 12:12:02.965+0000 INFO  Assigned admin role to user 'neo4j'.
+2021-05-19 12:12:02.974+0000 INFO  After initialization of system graph model component 'security-privileges' have version 8 and status CURRENT
+2021-05-19 12:12:46.871+0000 INFO  Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+2021-05-19 12:12:46.872+0000 INFO  Setting up initial user from defaults: neo4j
+2021-05-19 12:12:46.872+0000 INFO  Creating new user 'neo4j' (passwordChangeRequired=true, suspended=false)
+2021-05-19 12:12:47.017+0000 INFO  Setting version for 'security-users' to 2
+2021-05-19 12:12:47.045+0000 INFO  After initialization of system graph model component 'security-users' have version 2 and status CURRENT
+2021-05-19 12:12:47.094+0000 INFO  Performing postInitialization step for component 'security-users' with version 2 and status CURRENT
+2021-05-19 12:12:47.583+0000 INFO  Initializing system graph model for component 'security-privileges' with version -1 and status UNINITIALIZED
+2021-05-19 12:12:47.584+0000 INFO  Initializing security model with 6 roles
+2021-05-19 12:12:48.096+0000 INFO  Setting version for 'security-privileges' to 4
+2021-05-19 12:12:48.122+0000 INFO  Upgrading 'security-privileges' version property from 4 to 5
+2021-05-19 12:12:48.150+0000 INFO  Upgrading 'security-privileges' version property from 5 to 6
+2021-05-19 12:12:48.175+0000 INFO  Upgrading 'security-privileges' version property from 6 to 7
+2021-05-19 12:12:48.176+0000 INFO  Upgrading 'security-privileges' version property from 7 to 8
+2021-05-19 12:12:48.230+0000 INFO  Assigned admin role to user 'neo4j'.
+2021-05-19 12:12:48.232+0000 INFO  After initialization of system graph model component 'security-privileges' have version 8 and status CURRENT
+2021-05-19 12:15:27.689+0000 INFO  [neo4j]: logged in (password change required)
+2021-05-19 12:15:37.233+0000 INFO  [neo4j]: logged in (password change required)
+2021-05-19 12:15:37.245+0000 INFO  [neo4j]: ALTER CURRENT USER SET PASSWORD FROM $oldPw TO $newPw
+2021-05-19 12:15:39.428+0000 INFO  [neo4j]: logged in
+2021-05-19 12:15:39.874+0000 INFO  [neo4j]: logged in
+2021-05-19 12:15:39.975+0000 INFO  [neo4j]: logged in
+2021-05-19 12:15:59.686+0000 INFO  [neo4j]: logged in

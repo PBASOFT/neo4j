@@ -1,0 +1,45 @@
+OpenJDK 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
+2021-05-19 12:11:41.706+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.transaction_advertised_address Neo4j automatically set it to 6002 to match causal_clustering.transaction_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.708+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.raft_advertised_address Neo4j automatically set it to 7002 to match causal_clustering.raft_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.708+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.discovery_advertised_address Neo4j automatically set it to 5002 to match causal_clustering.discovery_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.708+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.bolt.advertised_address Neo4j automatically set it to 7689 to match dbms.connector.bolt.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.708+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.http.advertised_address Neo4j automatically set it to 7476 to match dbms.connector.http.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.709+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.https.advertised_address Neo4j automatically set it to 6476 to match dbms.connector.https.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:11:41.715+0000 INFO  Starting...
+2021-05-19 12:11:43.963+0000 INFO  ======== Neo4j 4.2.6 ========
+2021-05-19 12:11:46.169+0000 INFO  Database 'system' is waiting for a total of 3 core members...
+2021-05-19 12:11:49.879+0000 INFO  Database 'system' is waiting for bootstrap by other instance...
+2021-05-19 12:12:19.394+0000 INFO  Connected to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:12:19.540+0000 INFO  Started downloading snapshot for database 'system'...
+2021-05-19 12:12:30.845+0000 INFO  Download of snapshot for database 'system' complete.
+2021-05-19 12:12:34.378+0000 INFO  Database 'neo4j' is waiting for a total of 3 core members...
+2021-05-19 12:12:34.913+0000 INFO  Database 'neo4j' is waiting for bootstrap by other instance...
+2021-05-19 12:13:04.237+0000 INFO  Started downloading snapshot for database 'neo4j'...
+2021-05-19 12:13:13.932+0000 INFO  Download of snapshot for database 'neo4j' complete.
+2021-05-19 12:13:15.996+0000 INFO  Sending metrics to CSV file at /Users/sebastian/Documents/dbd/Neo4j/Core-03/metrics
+2021-05-19 12:13:16.045+0000 INFO  Bolt enabled on localhost:7689.
+2021-05-19 12:13:17.089+0000 INFO  Connected to localhost/127.0.0.1:7001 [raft version:3.0]
+2021-05-19 12:13:17.445+0000 INFO  Remote interface available at http://localhost:7476/
+2021-05-19 12:13:17.446+0000 INFO  Started.
+2021-05-19 12:21:07.452+0000 INFO  Neo4j Server shutdown initiated by request
+2021-05-19 12:21:07.452+0000 INFO  Stopping...
+2021-05-19 12:21:14.042+0000 INFO  Lost connection to localhost/127.0.0.1:7001 [raft version:3.0]
+2021-05-19 12:21:14.043+0000 INFO  Lost connection to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:21:14.332+0000 INFO  Stopped.
+OpenJDK 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
+2021-05-19 12:25:29.480+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.transaction_advertised_address Neo4j automatically set it to 6002 to match causal_clustering.transaction_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.480+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.raft_advertised_address Neo4j automatically set it to 7002 to match causal_clustering.raft_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.481+0000 INFO  Note that since you did not explicitly set the port in causal_clustering.discovery_advertised_address Neo4j automatically set it to 5002 to match causal_clustering.discovery_listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.481+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.bolt.advertised_address Neo4j automatically set it to 7689 to match dbms.connector.bolt.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.481+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.http.advertised_address Neo4j automatically set it to 7476 to match dbms.connector.http.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.481+0000 INFO  Note that since you did not explicitly set the port in dbms.connector.https.advertised_address Neo4j automatically set it to 6476 to match dbms.connector.https.listen_address. This behavior may change in the future and we recommend you to explicitly set it.
+2021-05-19 12:25:29.487+0000 INFO  Starting...
+2021-05-19 12:25:31.508+0000 INFO  ======== Neo4j 4.2.6 ========
+2021-05-19 12:26:03.294+0000 INFO  Bound database 'system' to raft with id '00000000-0000-0000-0000-000000000001' as member id '3803860a-819f-459e-8699-260a59b82956', found on disk.
+2021-05-19 12:26:04.823+0000 INFO  Bound database 'neo4j' to raft with id '1d7adb92-8ec0-4e9b-9b35-991cc63cad18' as member id '3803860a-819f-459e-8699-260a59b82956', found on disk.
+2021-05-19 12:26:05.081+0000 INFO  Connected to localhost/127.0.0.1:7001 [raft version:3.0]
+2021-05-19 12:26:05.212+0000 INFO  Connected to localhost/127.0.0.1:7000 [raft version:3.0]
+2021-05-19 12:26:05.804+0000 INFO  Sending metrics to CSV file at /Users/sebastian/Documents/dbd/Neo4j/Core-03/metrics
+2021-05-19 12:26:05.835+0000 INFO  Bolt enabled on localhost:7689.
+2021-05-19 12:26:06.748+0000 INFO  Remote interface available at http://localhost:7476/
+2021-05-19 12:26:06.749+0000 INFO  Started.

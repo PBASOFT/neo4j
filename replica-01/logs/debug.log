@@ -1,0 +1,1132 @@
+2021-05-19 12:37:51.848+0000 WARN  [o.n.k.i.JvmChecker] You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) 11 or OpenJDK(TM) 11.
+2021-05-19 12:37:51.849+0000 WARN  [o.n.k.i.JvmChecker] The max heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 4294967296 bytes is used instead. If you are running neo4j server, you need to configure dbms.memory.heap.max_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xmx set to a value. You can run neo4j-admin memrec for memory configuration suggestions.
+2021-05-19 12:37:51.849+0000 WARN  [o.n.k.i.JvmChecker] The initial heap memory has not been configured. It is recommended that it is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 268435456 bytes is used instead. If you are running neo4j server, you need to configure dbms.memory.heap.initial_size in neo4j.conf. If you are running neo4j embedded, you have to launch the JVM with -Xms set to a value. You can run neo4j-admin memrec for memory configuration suggestions.
+2021-05-19 12:37:51.950+0000 WARN  [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 6442450944 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2021-05-19 12:37:52.162+0000 INFO  [o.n.i.d.DiagnosticsManager] 
+                                                                ********************************************************************************
+                                                                                             [ System diagnostics ]                             
+                                                                ********************************************************************************
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ System memory information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Total Physical memory: 16.00GiB
+                                                                Free Physical memory: 33.59MiB
+                                                                Committed virtual memory: 9.902GiB
+                                                                Total swap space: 0B
+                                                                Free swap space: 0B
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                           [ JVM memory information ]                           
+                                                                --------------------------------------------------------------------------------
+                                                                Free  memory: 65.79MiB
+                                                                Total memory: 88.00MiB
+                                                                Max   memory: 4.000GiB
+                                                                Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+                                                                Memory Pool: CodeHeap 'non-nmethods' (Non-heap memory): committed=2.438MiB, used=1.228MiB, max=5.570MiB, threshold=0B
+                                                                Memory Pool: Metaspace (Non-heap memory): committed=21.13MiB, used=20.48MiB, max=-1B, threshold=0B
+                                                                Memory Pool: CodeHeap 'profiled nmethods' (Non-heap memory): committed=5.000MiB, used=4.949MiB, max=117.2MiB, threshold=0B
+                                                                Memory Pool: Compressed Class Space (Non-heap memory): committed=2.625MiB, used=2.391MiB, max=1.000GiB, threshold=0B
+                                                                Memory Pool: G1 Eden Space (Heap memory): committed=66.00MiB, used=0B, max=-1B, threshold=?
+                                                                Memory Pool: G1 Old Gen (Heap memory): committed=12.00MiB, used=10.73MiB, max=4.000GiB, threshold=0B
+                                                                Memory Pool: G1 Survivor Space (Heap memory): committed=10.00MiB, used=9.475MiB, max=-1B, threshold=?
+                                                                Memory Pool: CodeHeap 'non-profiled nmethods' (Non-heap memory): committed=2.438MiB, used=1.265MiB, max=117.2MiB, threshold=0B
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                        [ Operating system information ]                        
+                                                                --------------------------------------------------------------------------------
+                                                                Operating System: Mac OS X; version: 10.16; arch: x86_64; cpus: 8
+                                                                Max number of file descriptors: 10240
+                                                                Number of open file descriptors: 213
+                                                                Process id: 1907@MacBook-Pro-tilhrende-Sebastian.local
+                                                                Byte order: LITTLE_ENDIAN
+                                                                Local timezone: Europe/Copenhagen
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                              [ JVM information ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                VM Name: OpenJDK 64-Bit Server VM
+                                                                VM Vendor: Oracle Corporation
+                                                                VM Version: 15.0.2+7-27
+                                                                JIT compiler: HotSpot 64-Bit Tiered Compilers
+                                                                VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -XX:MaxInlineLevel=15, -XX:-UseBiasedLocking, -Djdk.nio.maxCachedBufferSize=262144, -Dio.netty.tryReflectionSetAccessible=true, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -XX:FlightRecorderOptions=stackdepth=256, -XX:+UnlockDiagnosticVMOptions, -XX:+DebugNonSafepoints, -Dlog4j2.disable.jmx=true, -Dfile.encoding=UTF-8]
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                               [ Java classpath ]                               
+                                                                --------------------------------------------------------------------------------
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-kernel-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/conf
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/scallop_2.12-2.1.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/annotations-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/javassist-3.25.0-GA.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jPowerShell-3.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jaxb-api-2.3.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-lang-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-push-to-cloud-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/config-1.3.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/metrics-jmx-4.1.12.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/slf4j-nop-1.7.30.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/asm-8.0.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/lz4-1.3.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-core-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-common-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-server-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-compiled-expressions-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/WMI4Java-1.6.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/eclipse-collections-api-10.3.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-diagnostics-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-metrics-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-server-enterprise-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jna-5.6.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-wal-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-consistency-check-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-servlet-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-backup-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-actor_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jaxb-runtime-2.3.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-jaxrs-base-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-ir-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-macros-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-collections-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-beanutils-1.9.4.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-ssl-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/stax-ex-1.8.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-media-jaxb-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-expressions-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-batch-insert-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/scala-library-2.12.10.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-data-collector-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.activation-api-1.2.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-compress-1.20.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/server-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-crypto-core-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-front-end-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-javacc-parser-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/lucene-core-8.5.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-ast-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/scala-reflect-2.12.10.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/kiama_2.12-2.1.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-slotted-runtime-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-logging-1.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/javax.servlet-api-3.1.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-record-storage-engine-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-fulltext-index-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/simpleclient_dropwizard-0.9.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/simpleclient-0.9.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-annotations-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-security-enterprise-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/ssl-config-core_2.12-0.3.7.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/lucene-backward-codecs-8.5.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.ws.rs-api-2.1.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-interpreted-runtime-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-kernel-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/simpleclient_common-0.9.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/javax.ws.rs-api-2.1.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-codegen-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-graphdb-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-procedure-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-databind-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/bcprov-jdk15on-1.68.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.activation-1.2.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-io-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/txw2-2.3.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jctools-core-3.1.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-pipelined-runtime-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-fabric-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-storage-engine-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-import-tool-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-dbms-enterprise-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/hk2-api-2.6.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/asm-analysis-8.0.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-event-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-coordination_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/reactor-core-3.3.15.RELEASE.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jProcesses-1.6.5.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-module-jaxb-annotations-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/aeron-driver-1.15.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-native-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-io-2.7.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/istack-commons-runtime-3.0.8.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-token-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-dbms-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-client-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-distributed-data_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-http-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-cluster_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-xml-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/parboiled-core-1.2.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-query-logging-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-causal-clustering-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-util-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-concurrent-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-parser-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-expression-evaluator-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.validation-api-2.0.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/reactive-streams-1.0.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-logical-plans-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-core-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-rewriting-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jettison-1.4.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jline-2.14.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-fabric-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-security-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-lang3-3.11.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-procedure-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/plugins
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-runtime-util-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/scala-java8-compat_2.12-0.8.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-container-servlet-core-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-cluster-tools_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-import-util-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/parboiled-scala_2.12-1.2.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-monitoring-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-planner-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-server-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-cache-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/simpleclient_httpserver-0.9.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/metrics-core-4.1.12.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-procedure-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/bcpkix-jdk15on-1.68.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-protobuf_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/asm-tree-8.0.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-graph-algo-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-layout-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/netty-all-4.1.63.Final.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-csv-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/slf4j-api-1.7.30.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-logging-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.xml.bind-api-2.3.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.annotation-api-1.3.5.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-schema-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-exec-1.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-client-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-crypto-cipher-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-record-storage-engine-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-crypto-hash-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-hk2-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-stream_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-configuration-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/zstd-proxy-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-security-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-spatial-index-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-text-1.9.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-lucene-index-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/akka-remote_2.12-2.5.22.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-exceptions-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jackson-jaxrs-json-provider-2.11.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/FastInfoset-1.2.16.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-browser-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-physical-planning-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-ast-factory-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/hk2-locator-2.6.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jamm-0.3.3.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-auth-plugin-api-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/metrics-graphite-4.1.12.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-bolt-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/picocli-4.5.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-io-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/cypher-ast-factory-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-config-ogdl-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/hk2-utils-2.6.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-lock-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/commons-collections-3.2.2.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-id-generator-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-server-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-kernel-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-cypher-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/aeron-client-1.15.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/caffeine-2.8.5.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-label-index-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-common-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/plugins/*
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/agrona-0.9.31.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-index-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/scala-parser-combinators_2.12-1.1.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-values-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-cypher-planner-spi-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jersey-container-servlet-2.32.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-enterprise-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/lucene-queryparser-8.5.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-webapp-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/lucene-analyzers-common-8.5.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jakarta.inject-2.6.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-unsafe-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/eclipse-collections-10.3.0.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-command-line-4.2.6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/zstd-jni-1.4.5-6.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/shiro-config-core-1.7.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/jetty-util-9.4.39.v20210325.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/asm-util-8.0.1.jar
+                                                                 [classpath] /Users/sebastian/Documents/dbd/Neo4j/replica-01/lib/neo4j-resource-4.2.6.jar
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ Library path ]                                
+                                                                --------------------------------------------------------------------------------
+                                                                /Users/sebastian/Library/Java/Extensions
+                                                                /Library/Java/Extensions
+                                                                /Network/Library/Java/Extensions
+                                                                /System/Library/Java/Extensions
+                                                                /usr/lib/java
+                                                                /Users/sebastian/Documents/dbd/Neo4j/replica-01
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                             [ System properties ]                              
+                                                                --------------------------------------------------------------------------------
+                                                                jdk.tls.rejectClientInitiatedRenegotiation = true
+                                                                sun.jnu.encoding = UTF-8
+                                                                sun.arch.data.model = 64
+                                                                user.timezone = Europe/Copenhagen
+                                                                sun.java.launcher = SUN_STANDARD
+                                                                user.country = DK
+                                                                sun.boot.library.path = /Users/sebastian/Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home/lib
+                                                                sun.java.command = com.neo4j.server.enterprise.EnterpriseEntryPoint --home-dir=/Users/sebastian/Documents/dbd/Neo4j/replica-01 --config-dir=/Users/sebastian/Documents/dbd/Neo4j/replica-01/conf 
+                                                                http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                jdk.debug = release
+                                                                io.netty.tryReflectionSetAccessible = true
+                                                                sun.cpu.endian = little
+                                                                user.home = /Users/sebastian
+                                                                user.language = da
+                                                                file.separator = /
+                                                                jdk.tls.ephemeralDHKeySize = 2048
+                                                                sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+                                                                ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                user.name = sebastian
+                                                                jdk.nio.maxCachedBufferSize = 262144
+                                                                path.separator = :
+                                                                file.encoding = UTF-8
+                                                                jnidispatch.path = /Users/sebastian/Library/Caches/JNA/temp/jna567280007218089752.tmp
+                                                                jna.loaded = true
+                                                                user.dir = /Users/sebastian/Documents/dbd/Neo4j/replica-01
+                                                                sun.io.unicode.encoding = UnicodeBig
+                                                                log4j2.disable.jmx = true
+                                                                socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                      [ (IANA) TimeZone database version ]                      
+                                                                --------------------------------------------------------------------------------
+                                                                  TimeZone version: 2020d (available for 600 zone identifiers)
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                            [ Network information ]                             
+                                                                --------------------------------------------------------------------------------
+                                                                Interface utun2:
+                                                                    address: fe80:0:0:0:34f9:b165:945e:c602%utun2
+                                                                Interface utun1:
+                                                                    address: fe80:0:0:0:1701:476f:6db5:7f20%utun1
+                                                                Interface utun0:
+                                                                    address: fe80:0:0:0:16d7:e747:f613:5eb2%utun0
+                                                                Interface llw0:
+                                                                    address: fe80:0:0:0:5427:a2ff:fe04:780%llw0
+                                                                Interface awdl0:
+                                                                    address: fe80:0:0:0:5427:a2ff:fe04:780%awdl0
+                                                                Interface en5:
+                                                                    address: fe80:0:0:0:aede:48ff:fe00:1122%en5
+                                                                Interface en0:
+                                                                    address: fe80:0:0:0:85f:2a43:7787:7be4%en0
+                                                                    address: 192.168.0.16
+                                                                Interface lo0:
+                                                                    address: fe80:0:0:0:0:0:0:1%lo0
+                                                                    address: 0:0:0:0:0:0:0:1%lo0
+                                                                    address: 127.0.0.1
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                         [ Native access information ]                          
+                                                                --------------------------------------------------------------------------------
+                                                                Native access details: Native access is not available for current platform.
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                            [ Container heuristics ]                            
+                                                                --------------------------------------------------------------------------------
+                                                                Docker: false
+                                                                LXC: false
+                                                                Kubernetes: false
+                                                                
+                                                                --------------------------------------------------------------------------------
+                                                                                                [ DBMS config ]                                 
+                                                                --------------------------------------------------------------------------------
+                                                                DBMS provided settings:
+                                                                causal_clustering.discovery_listen_address=localhost:5003
+                                                                causal_clustering.initial_discovery_members=localhost:5000,localhost:5001,localhost:5002
+                                                                causal_clustering.transaction_listen_address=localhost:6003
+                                                                dbms.backup.listen_address=0.0.0.0:6365
+                                                                dbms.connector.bolt.enabled=true
+                                                                dbms.connector.bolt.listen_address=localhost:7690
+                                                                dbms.connector.http.enabled=true
+                                                                dbms.connector.http.listen_address=localhost:7477
+                                                                dbms.connector.https.enabled=false
+                                                                dbms.connector.https.listen_address=localhost:6477
+                                                                dbms.directories.import=/Users/sebastian/Documents/dbd/Neo4j/replica-01/import
+                                                                dbms.directories.neo4j_home=/Users/sebastian/Documents/dbd/Neo4j/replica-01
+                                                                dbms.jvm.additional=-Dlog4j2.disable.jmx=true
+                                                                dbms.mode=READ_REPLICA
+                                                                dbms.tx_state.memory_allocation=ON_HEAP
+                                                                dbms.windows_service_name=neo4j
+                                                                metrics.csv.rotation.compression=ZIP
+                                                                
+2021-05-19 12:37:52.311+0000 INFO  [c.n.c.r.ReadReplicaClusteringIdentityModule] Creating transient ServerID/MemberId for read replica: ServerId{69ed9527} (69ed9527-5998-402d-825f-1c24b52d1330)
+2021-05-19 12:37:52.660+0000 INFO  [c.n.c.c.TransactionBackupServiceProvider] Binding backup service on address 0.0.0.0:6365
+2021-05-19 12:37:53.768+0000 INFO  [c.n.s.e.EnterpriseNeoWebServer] ======== Neo4j 4.2.6 ========
+2021-05-19 12:37:53.841+0000 INFO  [o.n.b.BoltServer] Bolt server loaded
+2021-05-19 12:37:54.928+0000 WARN  [a.e.DummyClassForStringSources] Using serializer [com.neo4j.causalclustering.discovery.akka.marshal.UniqueAddressSerializer] for message [akka.cluster.UniqueAddress]. Note that this serializer is not implemented by Akka. It's not recommended to replace serializers for messages provided by Akka.
+2021-05-19 12:37:55.024+0000 INFO  [c.n.c.n.Server] [catchup-server] bound to '127.0.0.1:6003' with transport 'NioServerSocketChannel'
+2021-05-19 12:37:55.025+0000 INFO  [c.n.c.n.Server] [backup-server] bound to '[0:0:0:0:0:0:0:0]:6365' with transport 'NioServerSocketChannel'
+2021-05-19 12:37:55.026+0000 INFO  [c.n.d.StartupOperator] Starting up 'system' database
+2021-05-19 12:37:55.042+0000 INFO  [c.n.d.ClusteredDbmsReconciler] Database 'system' is requested to transition from INITIAL{db=system/00000000} to STARTED{db=system/00000000}
+2021-05-19 12:37:55.046+0000 INFO  [c.n.c.r.ReadReplicaDatabaseManager] Creating 'DatabaseId{00000000[system]}'.
+2021-05-19 12:37:55.052+0000 INFO  [o.n.k.i.f.StatementLocksFactorySelector] [system/00000000] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2021-05-19 12:37:55.323+0000 INFO  [c.n.c.u.s.ConnectToRandomCoreServerStrategy] [system/00000000] Using upstream selection strategy connect-to-random-core-server
+2021-05-19 12:37:55.340+0000 INFO  [c.n.c.r.ReadReplicaDatabaseManager] Starting 'DatabaseId{00000000[system]}'.
+2021-05-19 12:37:55.431+0000 WARN  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Unable to find upstream member for DatabaseId{00000000[system]}
+2021-05-19 12:37:56.434+0000 WARN  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Unable to find upstream member for DatabaseId{00000000[system]}
+2021-05-19 12:37:57.436+0000 WARN  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Unable to find upstream member for DatabaseId{00000000[system]}
+2021-05-19 12:37:58.437+0000 WARN  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Unable to find upstream member for DatabaseId{00000000[system]}
+2021-05-19 12:37:58.732+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Core topology for database DatabaseId{1d7adb92} is now: [ServerId{3803860a}, ServerId{3899b520}, ServerId{79d0372d}]
+No members were lost
+New members: 
+  ServerId{3803860a}=CoreServerInfo{raftServer=localhost:7002, catchupServer=localhost:6002, connectorAddresses=bolt://localhost:7689,http://localhost:7476, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+  ServerId{3899b520}=CoreServerInfo{raftServer=localhost:7000, catchupServer=localhost:6000, connectorAddresses=bolt://localhost:7687,http://localhost:7474, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+  ServerId{79d0372d}=CoreServerInfo{raftServer=localhost:7001, catchupServer=localhost:6001, connectorAddresses=bolt://localhost:7688,http://localhost:7475, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+2021-05-19 12:37:58.734+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Read replica topology for database DatabaseId{00000000} is now: [ServerId{69ed9527}]
+No members were lost
+New members: 
+  ServerId{69ed9527}=ReadReplicaInfo{catchupServerAddress=localhost:6003, connectorAddresses=bolt://localhost:7690,http://localhost:7477, groups=[], startedDatabaseIds=[DatabaseId{00000000}]}
+2021-05-19 12:37:58.734+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Database leader(s) update:
+  Discovered leader RaftMemberId{3803860a} in term 5 for database DatabaseId{1d7adb92}
+  Discovered leader RaftMemberId{79d0372d} in term 3 for database DatabaseId{00000000}
+2021-05-19 12:37:58.735+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The core replicated states for database DatabaseId{1d7adb92} changed
+previous state was empty
+current state is:
+  ServerId{79d0372d}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+  ServerId{3899b520}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+  ServerId{3803860a}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:37:58.736+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The core replicated states for database DatabaseId{00000000} changed
+previous state was empty
+current state is:
+  ServerId{79d0372d}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+  ServerId{3899b520}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+  ServerId{3803860a}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:37:59.442+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Syncing db: DatabaseId{00000000[system]}
+2021-05-19 12:37:59.449+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Local database is empty, attempting to replace with copy from upstream server ServerId{79d0372d}
+2021-05-19 12:37:59.449+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Finding store ID of upstream server ServerId{79d0372d}
+2021-05-19 12:37:59.473+0000 INFO  [c.n.c.p.i.ClientChannelInitializer] Initializing client channel [id: 0xc6c89352]
+2021-05-19 12:37:59.560+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0xc6c89352, L:/127.0.0.1:50481 - R:localhost/127.0.0.1:6001]
+2021-05-19 12:37:59.576+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Connected to localhost/127.0.0.1:6001 [catchup version:4.0]
+2021-05-19 12:37:59.577+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0xc6c89352, L:/127.0.0.1:50481 - R:localhost/127.0.0.1:6001]. Installing: catchup version:4.0
+2021-05-19 12:37:59.607+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Copying store from upstream server ServerId{79d0372d}
+2021-05-19 12:37:59.659+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Requesting store listing from: localhost:6001
+2021-05-19 12:37:59.737+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Core topology for database DatabaseId{00000000} is now: [ServerId{3803860a}, ServerId{3899b520}, ServerId{79d0372d}]
+No members were lost
+New members: 
+  ServerId{3803860a}=CoreServerInfo{raftServer=localhost:7002, catchupServer=localhost:6002, connectorAddresses=bolt://localhost:7689,http://localhost:7476, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+  ServerId{3899b520}=CoreServerInfo{raftServer=localhost:7000, catchupServer=localhost:6000, connectorAddresses=bolt://localhost:7687,http://localhost:7474, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+  ServerId{79d0372d}=CoreServerInfo{raftServer=localhost:7001, catchupServer=localhost:6001, connectorAddresses=bolt://localhost:7688,http://localhost:7475, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}], refuseToBeLeader=false}
+2021-05-19 12:38:00.426+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.counts.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.430+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.432+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.433+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.435+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.strings.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.437+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.arrays.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.438+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.440+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.keys.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.443+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.444+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.names.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.445+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.447+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.names.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.448+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.450+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.schemastore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.451+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.labels.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.452+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipgroupstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.453+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labelscanstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.454+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.indexstats.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.455+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: schema/index/native-btree-1.0/1/index-1 from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.456+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: schema/index/native-btree-1.0/3/index-3 from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.457+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: schema/index/native-btree-1.0/5/index-5 from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.458+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.459+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.460+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.labels.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.460+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.labels.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.461+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.461+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.462+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.keys.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.462+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.keys.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.462+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.463+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.463+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.strings.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.464+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.strings.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.465+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.arrays.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.466+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.arrays.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.467+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.468+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.469+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.469+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.470+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.names.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.471+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.names.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.471+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.472+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.473+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.names.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.473+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.names.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.474+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.474+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.475+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.schemastore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.476+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.schemastore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.477+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipgroupstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.478+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipgroupstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.478+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.counts.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.479+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labelscanstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.480+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/schema/index/native-btree-1.0/1/index-1.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.481+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/schema/index/native-btree-1.0/3/index-3.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.481+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/schema/index/native-btree-1.0/5/index-5.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.482+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.indexstats.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.490+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.506+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.labels from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.509+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.509+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.529+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.532+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.532+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.540+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.keys from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.541+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.542+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.550+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.552+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.552+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.561+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.strings from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.562+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.562+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.570+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.arrays from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.572+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.572+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.579+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.580+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.580+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.589+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.590+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.590+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.596+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.names from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.597+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.597+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.607+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.608+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.609+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.614+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.names from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.615+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.615+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.622+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.624+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.624+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.629+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.schemastore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.630+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.630+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.635+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipgroupstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.637+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.638+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:00.643+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore from: localhost/127.0.0.1:6001
+2021-05-19 12:38:00.644+0000 INFO  [c.n.c.c.s.StoreCopyClient] [system/00000000] StoreCopyRequest was successful.
+2021-05-19 12:38:00.645+0000 INFO  [c.n.c.c.s.RemoteStore] [system/00000000] Store files need to be recovered starting from: RequiredTransactions{from=57, to=57}
+2021-05-19 12:38:00.809+0000 INFO  [c.n.c.c.s.TxPuller] [system/00000000] Pulling transactions from localhost:6001 starting with txId: 56
+2021-05-19 12:38:00.859+0000 INFO  [c.n.c.c.s.TxPuller] [system/00000000] Pulling transactions from localhost:6001 starting with txId: 57
+2021-05-19 12:38:00.862+0000 INFO  [c.n.c.c.TransactionLogCatchUpWriter] [system/00000000] Writing checkpoint as part of full store copy: LogPosition{logVersion=0, byteOffset=64}
+2021-05-19 12:38:03.290+0000 INFO  [c.n.c.c.s.StoreCopyProcess] [system/00000000] Replaced store successfully
+2021-05-19 12:38:03.290+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [system/00000000] Restarting local database after copy.
+2021-05-19 12:38:03.319+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Selected RecordFormat:PageAlignedV4_1[AF4.1.a] record format from store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/system
+2021-05-19 12:38:03.320+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Selected format 'RecordFormat:PageAlignedV4_1[AF4.1.a]' for existing store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/system with format 'RecordFormat:PageAlignedV4_1[AF4.1.a]'
+2021-05-19 12:38:03.366+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [system/00000000] Scanning log file with version 0 for checkpoint entries
+2021-05-19 12:38:03.389+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Selected RecordFormat:PageAlignedV4_1[AF4.1.a] record format from store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/system
+2021-05-19 12:38:03.389+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [system/00000000] Format not configured for store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/system. Selected format from the store files: RecordFormat:PageAlignedV4_1[AF4.1.a]
+2021-05-19 12:38:03.985+0000 INFO  [o.n.i.d.DiagnosticsManager] [system/00000000] 
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000]                               [ Database: system ]                              
+                                                                [system/00000000] ********************************************************************************
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Version ]                                   
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] DBMS: enterprise read_replica StoreId{creationTime=1621426313227, randomId=-8869818889519486992, storeVersion=7002588545122976007, upgradeTime=1621426313227, upgradeTxId=1}
+                                                                [system/00000000] Kernel version: 4.2.6
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                 [ Store files ]                                 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Disk space on partition (Total / Free / Free %): 499963174912 / 393432350720 / 78
+                                                                [system/00000000] Storage files stored on file store: apfs
+                                                                [system/00000000] Storage files: (filename : modification date - size)
+                                                                [system/00000000]   neostore: 2021-05-19T14:38:02+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.counts.db: 2021-05-19T14:38:03+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.id: 2021-05-19T14:38:03+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.indexstats.db: 2021-05-19T14:38:02+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.labelscanstore.db: 2021-05-19T14:38:02+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.names: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.labeltokenstore.db.names.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.nodestore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.nodestore.db.id: 2021-05-19T14:38:03+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.nodestore.db.labels: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.nodestore.db.labels.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db: 2021-05-19T14:38:02+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.arrays: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.arrays.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.index: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.keys: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.index.keys.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.propertystore.db.strings: 2021-05-19T14:38:02+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.propertystore.db.strings.id: 2021-05-19T14:38:03+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshipgroupstore.db.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshipstore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshipstore.db.id: 2021-05-19T14:38:03+02:00 - 48.00KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.relationshiptypestore.db.names.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   neostore.schemastore.db: 2021-05-19T14:38:00+02:00 - 8.000KiB
+                                                                [system/00000000]   neostore.schemastore.db.id: 2021-05-19T14:38:03+02:00 - 40.00KiB
+                                                                [system/00000000]   profiles:
+                                                                [system/00000000]     neostore.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.counts.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.indexstats.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.labelscanstore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.labeltokenstore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.labeltokenstore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.labeltokenstore.db.names.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.labeltokenstore.db.names.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.nodestore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.nodestore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.nodestore.db.labels.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.nodestore.db.labels.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.arrays.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.arrays.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.index.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.index.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.index.keys.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.index.keys.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.strings.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.propertystore.db.strings.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshipgroupstore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshipgroupstore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshipstore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshipstore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshiptypestore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshiptypestore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshiptypestore.db.names.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.relationshiptypestore.db.names.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.schemastore.db.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     neostore.schemastore.db.id.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]     schema:
+                                                                [system/00000000]       index:
+                                                                [system/00000000]         native-btree-1.0:
+                                                                [system/00000000]           1:
+                                                                [system/00000000]             index-1.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]           - Total: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]           3:
+                                                                [system/00000000]             index-3.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]           - Total: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]           5:
+                                                                [system/00000000]             index-5.22.cacheprof: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]           - Total: 2021-05-19T14:38:00+02:00 - 21B
+                                                                [system/00000000]         - Total: 2021-05-19T14:38:00+02:00 - 63B
+                                                                [system/00000000]       - Total: 2021-05-19T14:38:00+02:00 - 63B
+                                                                [system/00000000]     - Total: 2021-05-19T14:38:00+02:00 - 63B
+                                                                [system/00000000]   - Total: 2021-05-19T14:38:00+02:00 - 756B
+                                                                [system/00000000]   schema:
+                                                                [system/00000000]     index:
+                                                                [system/00000000]       native-btree-1.0:
+                                                                [system/00000000]         1:
+                                                                [system/00000000]           index-1: 2021-05-19T14:38:02+02:00 - 48.00KiB
+                                                                [system/00000000]         - Total: 2021-05-19T14:38:00+02:00 - 48.00KiB
+                                                                [system/00000000]         3:
+                                                                [system/00000000]           index-3: 2021-05-19T14:38:02+02:00 - 48.00KiB
+                                                                [system/00000000]         - Total: 2021-05-19T14:38:00+02:00 - 48.00KiB
+                                                                [system/00000000]         5:
+                                                                [system/00000000]           index-5: 2021-05-19T14:38:02+02:00 - 48.00KiB
+                                                                [system/00000000]         - Total: 2021-05-19T14:38:00+02:00 - 48.00KiB
+                                                                [system/00000000]       - Total: 2021-05-19T14:38:00+02:00 - 144.0KiB
+                                                                [system/00000000]     - Total: 2021-05-19T14:38:00+02:00 - 144.0KiB
+                                                                [system/00000000]   - Total: 2021-05-19T14:38:00+02:00 - 144.0KiB
+                                                                [system/00000000] Storage summary: 
+                                                                [system/00000000]   Total size of store: 1.016MiB
+                                                                [system/00000000]   Total size of mapped files: 312.0KiB
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                               [ Transaction log ]                               
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] Transaction log files stored on file store: apfs
+                                                                [system/00000000] Oldest transaction 57 found in log with version 0
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                   [ Id usage ]                                  
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [system/00000000] NodeStore[neostore.nodestore.db]: used=46 high=45
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.index.keys]: used=61 high=60
+                                                                [system/00000000] PropertyIndexStore[neostore.propertystore.db.index]: used=40 high=39
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.strings]: used=5 high=4
+                                                                [system/00000000] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [system/00000000] PropertyStore[neostore.propertystore.db]: used=86 high=85
+                                                                [system/00000000] RelationshipStore[neostore.relationshipstore.db]: used=85 high=84
+                                                                [system/00000000] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=7 high=6
+                                                                [system/00000000] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=6 high=5
+                                                                [system/00000000] StringPropertyStore[neostore.labeltokenstore.db.names]: used=16 high=15
+                                                                [system/00000000] LabelTokenStore[neostore.labeltokenstore.db]: used=15 high=14
+                                                                [system/00000000] SchemaStore[neostore.schemastore.db]: used=7 high=6
+                                                                [system/00000000] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [system/00000000] NeoStore[neostore]: used=19 high=18
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                               [ Neostore records ]                              
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] TIME (Creation time): 1621426313227
+                                                                [system/00000000] RANDOM_NUMBER (Random number for store id): -8869818889519486992
+                                                                [system/00000000] LOG_VERSION (Current log version): 0
+                                                                [system/00000000] LAST_TRANSACTION_ID (Last committed transaction): 57
+                                                                [system/00000000] STORE_VERSION (Store format version): 7002588545122976007
+                                                                [system/00000000] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+                                                                [system/00000000] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 28
+                                                                [system/00000000] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+                                                                [system/00000000] UPGRADE_TIME (Time of last upgrade): 1621426313227
+                                                                [system/00000000] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 2022723974
+                                                                [system/00000000] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): -559063315
+                                                                [system/00000000] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+                                                                [system/00000000] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 695
+                                                                [system/00000000] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1621426537257
+                                                                [system/00000000] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+                                                                [system/00000000] LAST_MISSING_STORE_FILES_RECOVERY_TIMESTAMP (Timestamp of last attempt to perform a recovery on the store with missing files.): -1
+                                                                [system/00000000] EXTERNAL_STORE_UUID_MOST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Most significant bits.): 6972738421550238058
+                                                                [system/00000000] EXTERNAL_STORE_UUID_LEAST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Least significant bits): -8207902323765873452
+                                                                [system/00000000] CHECKPOINT_LOG_VERSION (Current checkpoint log version): 0
+                                                                [system/00000000] 
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000]                                [ Store versions ]                               
+                                                                [system/00000000] --------------------------------------------------------------------------------
+                                                                [system/00000000] ArrayPropertyStore[neostore.nodestore.db.labels] AF4.1.a
+                                                                [system/00000000] NodeStore[neostore.nodestore.db] AF4.1.a
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.index.keys] AF4.1.a
+                                                                [system/00000000] PropertyIndexStore[neostore.propertystore.db.index] AF4.1.a
+                                                                [system/00000000] StringPropertyStore[neostore.propertystore.db.strings] AF4.1.a
+                                                                [system/00000000] ArrayPropertyStore[neostore.propertystore.db.arrays] AF4.1.a
+                                                                [system/00000000] PropertyStore[neostore.propertystore.db] AF4.1.a
+                                                                [system/00000000] RelationshipStore[neostore.relationshipstore.db] AF4.1.a
+                                                                [system/00000000] StringPropertyStore[neostore.relationshiptypestore.db.names] AF4.1.a
+                                                                [system/00000000] RelationshipTypeStore[neostore.relationshiptypestore.db] AF4.1.a
+                                                                [system/00000000] StringPropertyStore[neostore.labeltokenstore.db.names] AF4.1.a
+                                                                [system/00000000] LabelTokenStore[neostore.labeltokenstore.db] AF4.1.a
+                                                                [system/00000000] SchemaStore[neostore.schemastore.db] AF4.1.a
+                                                                [system/00000000] RelationshipGroupStore[neostore.relationshipgroupstore.db] AF4.1.a
+                                                                [system/00000000] NeoStore[neostore] AF4.1.a
+                                                                [system/00000000] 
+2021-05-19 12:38:04.094+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] IndexingService.init: indexes not specifically mentioned above are ONLINE
+2021-05-19 12:38:04.119+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Requirement `Database unavailable` makes database system unavailable.
+2021-05-19 12:38:04.121+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is unavailable.
+2021-05-19 12:38:04.165+0000 INFO  [o.n.k.i.a.i.IndexingService] [system/00000000] IndexingService.start: indexes not specifically mentioned above are ONLINE
+2021-05-19 12:38:04.166+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] Fulfilling of requirement 'Database unavailable' makes database system available.
+2021-05-19 12:38:04.166+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [system/00000000] DatabaseId{00000000[system]} is ready.
+2021-05-19 12:38:04.166+0000 INFO  [c.n.k.i.p.PageCacheWarmer] [system/00000000] Page cache warmup started.
+2021-05-19 12:38:04.167+0000 INFO  [o.n.m.DatabaseHealth] [system/00000000] Database health set to OK
+2021-05-19 12:38:04.167+0000 INFO  [c.n.c.r.CatchupProcessManager] [system/00000000] Starting CatchupProcessManager
+2021-05-19 12:38:04.173+0000 INFO  [c.n.d.ClusteredDbmsReconciler] Database 'system' transition is complete from INITIAL{db=system/00000000} to STARTED{db=system/00000000}
+2021-05-19 12:38:04.174+0000 INFO  [c.n.d.StartupOperator] 'system' database started
+2021-05-19 12:38:04.250+0000 INFO  [c.n.d.StartupOperator] Handling databases at startup: [DatabaseId{1d7adb92[neo4j]}]
+2021-05-19 12:38:04.254+0000 INFO  [c.n.d.ClusteredDbmsReconciler] Database 'neo4j' is requested to transition from INITIAL{db=neo4j/1d7adb92} to STARTED{db=neo4j/1d7adb92}
+2021-05-19 12:38:04.255+0000 INFO  [c.n.c.r.ReadReplicaDatabaseManager] Creating 'DatabaseId{1d7adb92[neo4j]}'.
+2021-05-19 12:38:04.256+0000 INFO  [o.n.k.i.f.StatementLocksFactorySelector] [neo4j/1d7adb92] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2021-05-19 12:38:04.260+0000 INFO  [c.n.c.u.s.ConnectToRandomCoreServerStrategy] [neo4j/1d7adb92] Using upstream selection strategy connect-to-random-core-server
+2021-05-19 12:38:04.262+0000 INFO  [c.n.c.r.ReadReplicaDatabaseManager] Starting 'DatabaseId{1d7adb92[neo4j]}'.
+2021-05-19 12:38:04.291+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [neo4j/1d7adb92] Syncing db: DatabaseId{1d7adb92[neo4j]}
+2021-05-19 12:38:04.292+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [neo4j/1d7adb92] Local database is empty, attempting to replace with copy from upstream server ServerId{79d0372d}
+2021-05-19 12:38:04.292+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [neo4j/1d7adb92] Finding store ID of upstream server ServerId{79d0372d}
+2021-05-19 12:38:04.294+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [neo4j/1d7adb92] Copying store from upstream server ServerId{79d0372d}
+2021-05-19 12:38:04.311+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Requesting store listing from: localhost:6001
+2021-05-19 12:38:04.757+0000 INFO  [c.n.k.i.p.PageCacheWarmer] [system/00000000] Page cache warmup completed. 108 pages loaded. Duration: 590ms. 0,18 pages/ms
+2021-05-19 12:38:05.064+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.counts.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.065+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.065+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.067+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.068+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.strings.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.068+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.arrays.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.069+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.069+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.keys.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.070+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.070+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.names.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.071+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.072+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.names.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.073+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.073+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.schemastore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.074+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.labels.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.075+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipgroupstore.db.id from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.076+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labelscanstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.077+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.indexstats.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.078+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.079+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.080+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.labels.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.080+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.labels.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.081+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.082+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.nodestore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.083+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.keys.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.084+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.keys.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.084+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.085+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.index.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.086+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.strings.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.086+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.strings.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.087+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.arrays.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.088+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.arrays.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.088+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.089+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.propertystore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.089+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.090+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.091+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.names.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.091+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.names.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.092+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.093+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshiptypestore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.093+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.names.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.094+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.names.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.095+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.095+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labeltokenstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.096+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.schemastore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.096+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.schemastore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.096+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipgroupstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.097+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.relationshipgroupstore.db.id.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.097+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.counts.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.098+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.labelscanstore.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.099+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: profiles/neostore.indexstats.db.22.cacheprof from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.102+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.108+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db.labels from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.110+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.110+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.117+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.nodestore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.118+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.118+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.125+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index.keys from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.127+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.127+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.134+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.index from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.135+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.136+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.143+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.strings from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.144+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.144+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.150+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db.arrays from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.151+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.151+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.157+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.propertystore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.158+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.159+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.164+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.165+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.165+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.171+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db.names from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.172+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.172+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.177+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshiptypestore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.178+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.178+0000 INFO  [c.n.c.p.i.ClientChannelInitializer] Initializing client channel [id: 0xe1cef092]
+2021-05-19 12:38:05.178+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.182+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db.names from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.183+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.183+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0xe1cef092, L:/127.0.0.1:50482 - R:localhost/127.0.0.1:6000]
+2021-05-19 12:38:05.183+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.185+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Connected to localhost/127.0.0.1:6000 [catchup version:4.0]
+2021-05-19 12:38:05.185+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0xe1cef092, L:/127.0.0.1:50482 - R:localhost/127.0.0.1:6000]. Installing: catchup version:4.0
+2021-05-19 12:38:05.189+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.labeltokenstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.189+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.190+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.193+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.schemastore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.194+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.194+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.198+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore.relationshipgroupstore.db from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.199+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.199+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] Sending request StoreCopyRequest to 'localhost:6001'
+2021-05-19 12:38:05.204+0000 INFO  [c.n.c.c.v.CatchupProtocolClientInstallerV4] Receiving file: neostore from: localhost/127.0.0.1:6001
+2021-05-19 12:38:05.205+0000 INFO  [c.n.c.c.s.StoreCopyClient] [neo4j/1d7adb92] StoreCopyRequest was successful.
+2021-05-19 12:38:05.205+0000 INFO  [c.n.c.c.s.RemoteStore] [neo4j/1d7adb92] Store files need to be recovered starting from: RequiredTransactions{from=6, to=6}
+2021-05-19 12:38:05.276+0000 INFO  [c.n.c.c.s.TxPuller] [neo4j/1d7adb92] Pulling transactions from localhost:6001 starting with txId: 5
+2021-05-19 12:38:05.297+0000 INFO  [c.n.c.c.s.TxPuller] [neo4j/1d7adb92] Pulling transactions from localhost:6001 starting with txId: 6
+2021-05-19 12:38:05.299+0000 INFO  [c.n.c.c.TransactionLogCatchUpWriter] [neo4j/1d7adb92] Writing checkpoint as part of full store copy: LogPosition{logVersion=0, byteOffset=64}
+2021-05-19 12:38:06.227+0000 INFO  [c.n.c.p.i.ClientChannelInitializer] Initializing client channel [id: 0x93e2f53c]
+2021-05-19 12:38:06.266+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Initiating handshake on channel [id: 0x93e2f53c, L:/127.0.0.1:50483 - R:localhost/127.0.0.1:6002]
+2021-05-19 12:38:06.287+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Connected to localhost/127.0.0.1:6002 [catchup version:4.0]
+2021-05-19 12:38:06.288+0000 INFO  [c.n.c.p.h.HandshakeClientInitializer] Handshake completed on channel [id: 0x93e2f53c, L:/127.0.0.1:50483 - R:localhost/127.0.0.1:6002]. Installing: catchup version:4.0
+2021-05-19 12:38:07.234+0000 INFO  [c.n.c.c.s.StoreCopyProcess] [neo4j/1d7adb92] Replaced store successfully
+2021-05-19 12:38:07.234+0000 INFO  [c.n.c.r.ReadReplicaBootstrap] [neo4j/1d7adb92] Restarting local database after copy.
+2021-05-19 12:38:07.264+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/1d7adb92] Selected RecordFormat:PageAlignedV4_1[AF4.1.a] record format from store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/neo4j
+2021-05-19 12:38:07.264+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/1d7adb92] Selected format 'RecordFormat:PageAlignedV4_1[AF4.1.a]' for existing store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/neo4j with format 'RecordFormat:PageAlignedV4_1[AF4.1.a]'
+2021-05-19 12:38:07.299+0000 INFO  [o.n.k.i.t.l.f.c.CheckpointLogFile] [neo4j/1d7adb92] Scanning log file with version 0 for checkpoint entries
+2021-05-19 12:38:07.321+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/1d7adb92] Selected RecordFormat:PageAlignedV4_1[AF4.1.a] record format from store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/neo4j
+2021-05-19 12:38:07.321+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] [neo4j/1d7adb92] Format not configured for store /Users/sebastian/Documents/dbd/Neo4j/replica-01/data/databases/neo4j. Selected format from the store files: RecordFormat:PageAlignedV4_1[AF4.1.a]
+2021-05-19 12:38:07.823+0000 INFO  [o.n.i.d.DiagnosticsManager] [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] ********************************************************************************
+                                                                [neo4j/1d7adb92]                               [ Database: neo4j ]                               
+                                                                [neo4j/1d7adb92] ********************************************************************************
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                                   [ Version ]                                   
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] DBMS: enterprise read_replica StoreId{creationTime=1621426364744, randomId=2850343731171057830, storeVersion=7002588545122976007, upgradeTime=1621426364744, upgradeTxId=1}
+                                                                [neo4j/1d7adb92] Kernel version: 4.2.6
+                                                                [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                                 [ Store files ]                                 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] Disk space on partition (Total / Free / Free %): 499963174912 / 393428865024 / 78
+                                                                [neo4j/1d7adb92] Storage files stored on file store: apfs
+                                                                [neo4j/1d7adb92] Storage files: (filename : modification date - size)
+                                                                [neo4j/1d7adb92]   neostore: 2021-05-19T14:38:06+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.counts.db: 2021-05-19T14:38:07+02:00 - 48.00KiB
+                                                                [neo4j/1d7adb92]   neostore.id: 2021-05-19T14:38:07+02:00 - 48.00KiB
+                                                                [neo4j/1d7adb92]   neostore.indexstats.db: 2021-05-19T14:38:06+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.labelscanstore.db: 2021-05-19T14:38:06+02:00 - 48.00KiB
+                                                                [neo4j/1d7adb92]   neostore.labeltokenstore.db: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.labeltokenstore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.labeltokenstore.db.names: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.labeltokenstore.db.names.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.nodestore.db: 2021-05-19T14:38:06+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.nodestore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.nodestore.db.labels: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.nodestore.db.labels.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db: 2021-05-19T14:38:06+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.arrays: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.arrays.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.index: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.index.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.index.keys: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.index.keys.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.strings: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.propertystore.db.strings.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshipgroupstore.db: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshipgroupstore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshipstore.db: 2021-05-19T14:38:06+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshipstore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshiptypestore.db: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshiptypestore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshiptypestore.db.names: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.relationshiptypestore.db.names.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   neostore.schemastore.db: 2021-05-19T14:38:05+02:00 - 8.000KiB
+                                                                [neo4j/1d7adb92]   neostore.schemastore.db.id: 2021-05-19T14:38:07+02:00 - 40.00KiB
+                                                                [neo4j/1d7adb92]   profiles:
+                                                                [neo4j/1d7adb92]     neostore.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.counts.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.indexstats.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.labelscanstore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.labeltokenstore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.labeltokenstore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.labeltokenstore.db.names.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.labeltokenstore.db.names.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.nodestore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.nodestore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.nodestore.db.labels.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.nodestore.db.labels.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.arrays.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.arrays.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.index.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.index.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.index.keys.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.index.keys.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.strings.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.propertystore.db.strings.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshipgroupstore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshipgroupstore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshipstore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshipstore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshiptypestore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshiptypestore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshiptypestore.db.names.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.relationshiptypestore.db.names.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.schemastore.db.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]     neostore.schemastore.db.id.22.cacheprof: 2021-05-19T14:38:05+02:00 - 21B
+                                                                [neo4j/1d7adb92]   - Total: 2021-05-19T14:38:05+02:00 - 693B
+                                                                [neo4j/1d7adb92] Storage summary: 
+                                                                [neo4j/1d7adb92]   Total size of store: 864.7KiB
+                                                                [neo4j/1d7adb92]   Total size of mapped files: 168.0KiB
+                                                                [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                               [ Transaction log ]                               
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] Transaction log files stored on file store: apfs
+                                                                [neo4j/1d7adb92] Oldest transaction 6 found in log with version 0
+                                                                [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                                   [ Id usage ]                                  
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+                                                                [neo4j/1d7adb92] NodeStore[neostore.nodestore.db]: used=138 high=137
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.propertystore.db.index.keys]: used=2 high=1
+                                                                [neo4j/1d7adb92] PropertyIndexStore[neostore.propertystore.db.index]: used=1 high=0
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.propertystore.db.strings]: used=1 high=0
+                                                                [neo4j/1d7adb92] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+                                                                [neo4j/1d7adb92] PropertyStore[neostore.propertystore.db]: used=138 high=137
+                                                                [neo4j/1d7adb92] RelationshipStore[neostore.relationshipstore.db]: used=156 high=155
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=2 high=1
+                                                                [neo4j/1d7adb92] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=1 high=0
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.labeltokenstore.db.names]: used=2 high=1
+                                                                [neo4j/1d7adb92] LabelTokenStore[neostore.labeltokenstore.db]: used=1 high=0
+                                                                [neo4j/1d7adb92] SchemaStore[neostore.schemastore.db]: used=1 high=0
+                                                                [neo4j/1d7adb92] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+                                                                [neo4j/1d7adb92] NeoStore[neostore]: used=19 high=18
+                                                                [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                               [ Neostore records ]                              
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] TIME (Creation time): 1621426364744
+                                                                [neo4j/1d7adb92] RANDOM_NUMBER (Random number for store id): 2850343731171057830
+                                                                [neo4j/1d7adb92] LOG_VERSION (Current log version): 0
+                                                                [neo4j/1d7adb92] LAST_TRANSACTION_ID (Last committed transaction): 6
+                                                                [neo4j/1d7adb92] STORE_VERSION (Store format version): 7002588545122976007
+                                                                [neo4j/1d7adb92] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+                                                                [neo4j/1d7adb92] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+                                                                [neo4j/1d7adb92] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+                                                                [neo4j/1d7adb92] UPGRADE_TIME (Time of last upgrade): 1621426364744
+                                                                [neo4j/1d7adb92] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 514515238
+                                                                [neo4j/1d7adb92] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): -559063315
+                                                                [neo4j/1d7adb92] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+                                                                [neo4j/1d7adb92] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 30396
+                                                                [neo4j/1d7adb92] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1621426633542
+                                                                [neo4j/1d7adb92] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+                                                                [neo4j/1d7adb92] LAST_MISSING_STORE_FILES_RECOVERY_TIMESTAMP (Timestamp of last attempt to perform a recovery on the store with missing files.): -1
+                                                                [neo4j/1d7adb92] EXTERNAL_STORE_UUID_MOST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Most significant bits.): 5702954448638593258
+                                                                [neo4j/1d7adb92] EXTERNAL_STORE_UUID_LEAST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Least significant bits): -7135561597448411858
+                                                                [neo4j/1d7adb92] CHECKPOINT_LOG_VERSION (Current checkpoint log version): 0
+                                                                [neo4j/1d7adb92] 
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92]                                [ Store versions ]                               
+                                                                [neo4j/1d7adb92] --------------------------------------------------------------------------------
+                                                                [neo4j/1d7adb92] ArrayPropertyStore[neostore.nodestore.db.labels] AF4.1.a
+                                                                [neo4j/1d7adb92] NodeStore[neostore.nodestore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.propertystore.db.index.keys] AF4.1.a
+                                                                [neo4j/1d7adb92] PropertyIndexStore[neostore.propertystore.db.index] AF4.1.a
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.propertystore.db.strings] AF4.1.a
+                                                                [neo4j/1d7adb92] ArrayPropertyStore[neostore.propertystore.db.arrays] AF4.1.a
+                                                                [neo4j/1d7adb92] PropertyStore[neostore.propertystore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] RelationshipStore[neostore.relationshipstore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.relationshiptypestore.db.names] AF4.1.a
+                                                                [neo4j/1d7adb92] RelationshipTypeStore[neostore.relationshiptypestore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] StringPropertyStore[neostore.labeltokenstore.db.names] AF4.1.a
+                                                                [neo4j/1d7adb92] LabelTokenStore[neostore.labeltokenstore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] SchemaStore[neostore.schemastore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] RelationshipGroupStore[neostore.relationshipgroupstore.db] AF4.1.a
+                                                                [neo4j/1d7adb92] NeoStore[neostore] AF4.1.a
+                                                                [neo4j/1d7adb92] 
+2021-05-19 12:38:07.873+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/1d7adb92] Requirement `Database unavailable` makes database neo4j unavailable.
+2021-05-19 12:38:07.874+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/1d7adb92] DatabaseId{1d7adb92[neo4j]} is unavailable.
+2021-05-19 12:38:07.888+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/1d7adb92] Fulfilling of requirement 'Database unavailable' makes database neo4j available.
+2021-05-19 12:38:07.888+0000 INFO  [o.n.k.a.DatabaseAvailabilityGuard] [neo4j/1d7adb92] DatabaseId{1d7adb92[neo4j]} is ready.
+2021-05-19 12:38:07.889+0000 INFO  [o.n.m.DatabaseHealth] [neo4j/1d7adb92] Database health set to OK
+2021-05-19 12:38:07.889+0000 INFO  [c.n.c.r.CatchupProcessManager] [neo4j/1d7adb92] Starting CatchupProcessManager
+2021-05-19 12:38:07.889+0000 INFO  [c.n.k.i.p.PageCacheWarmer] [neo4j/1d7adb92] Page cache warmup started.
+2021-05-19 12:38:07.889+0000 INFO  [c.n.d.ClusteredDbmsReconciler] Database 'neo4j' transition is complete from INITIAL{db=neo4j/1d7adb92} to STARTED{db=neo4j/1d7adb92}
+2021-05-19 12:38:07.890+0000 INFO  [c.n.d.StartupOperator] All databases were handled at startup
+2021-05-19 12:38:07.890+0000 INFO  [o.n.b.t.DefaultReconciledTransactionTracker] Enabling with transaction ID 57
+2021-05-19 12:38:07.907+0000 INFO  [c.n.m.g.GlobalMetricsExtension] Sending metrics to CSV file at /Users/sebastian/Documents/dbd/Neo4j/replica-01/metrics
+2021-05-19 12:38:07.917+0000 INFO  [c.n.k.i.p.PageCacheWarmer] [neo4j/1d7adb92] Page cache warmup completed. 92 pages loaded. Duration: 28ms. 3,29 pages/ms
+2021-05-19 12:38:07.935+0000 INFO  [o.n.b.BoltServer] Bolt enabled on localhost:7690.
+2021-05-19 12:38:07.936+0000 INFO  [o.n.s.AbstractNeoWebServer$ServerComponentsLifecycleAdapter] Starting web server
+2021-05-19 12:38:08.709+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The read_replica replicated states for database DatabaseId{00000000} changed
+previous state was empty
+current state is:
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:38:09.009+0000 INFO  [c.n.s.e.EnterpriseNeoWebServer] Remote interface available at http://localhost:7477/
+2021-05-19 12:38:09.010+0000 INFO  [o.n.s.AbstractNeoWebServer$ServerComponentsLifecycleAdapter] Web server started.
+2021-05-19 12:38:09.709+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Read replica topology for database DatabaseId{1d7adb92} is now: [ServerId{69ed9527}]
+No members were lost
+New members: 
+  ServerId{69ed9527}=ReadReplicaInfo{catchupServerAddress=localhost:6003, connectorAddresses=bolt://localhost:7690,http://localhost:7477, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}]}
+2021-05-19 12:38:13.712+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The read_replica replicated states for database DatabaseId{1d7adb92} changed
+previous state was empty
+current state is:
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:41:19.720+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Read replica topology for database DatabaseId{00000000} is now: [ServerId{613c45f9}, ServerId{69ed9527}]
+No members were lost
+New members: 
+  ServerId{613c45f9}=ReadReplicaInfo{catchupServerAddress=localhost:6004, connectorAddresses=bolt://localhost:7691,http://localhost:7478, groups=[], startedDatabaseIds=[DatabaseId{00000000}]}
+2021-05-19 12:41:23.714+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The read_replica replicated states for database DatabaseId{00000000} changed
+previous state was:
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+current state is:
+  ServerId{613c45f9}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{00000000}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:41:24.716+0000 INFO  [c.n.c.d.a.GlobalTopologyState] Read replica topology for database DatabaseId{1d7adb92} is now: [ServerId{613c45f9}, ServerId{69ed9527}]
+No members were lost
+New members: 
+  ServerId{613c45f9}=ReadReplicaInfo{catchupServerAddress=localhost:6004, connectorAddresses=bolt://localhost:7691,http://localhost:7478, groups=[], startedDatabaseIds=[DatabaseId{1d7adb92}, DatabaseId{00000000}]}
+2021-05-19 12:41:33.718+0000 INFO  [c.n.c.d.a.GlobalTopologyState] The read_replica replicated states for database DatabaseId{1d7adb92} changed
+previous state was:
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+current state is:
+  ServerId{613c45f9}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+  ServerId{69ed9527}=DiscoveryDatabaseState{DatabaseId{1d7adb92}, operatorState=STARTED, result=SUCCESS}
+2021-05-19 12:42:56.041+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5002], message stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 12:42:56.042+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5002], control stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 12:42:56.042+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5000], message stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 12:42:56.042+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5000], control stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 12:42:56.042+0000 WARN  [a.s.s.RestartWithBackoffFlow] Restarting graph due to failure. stack_trace:  (akka.stream.StreamTcpException: The connection has been aborted)
+2021-05-19 12:42:56.043+0000 WARN  [a.s.s.RestartWithBackoffFlow] Restarting graph due to failure. stack_trace:  (akka.stream.StreamTcpException: The connection has been aborted)
+2021-05-19 12:47:04.889+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:47:05.401+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:47:45.676+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:49:06.979+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:50:29.113+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:51:51.619+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:52:31.968+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:53:52.770+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:55:13.902+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:56:36.971+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:57:40.116+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 12:59:40.801+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:01:02.927+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:02:24.842+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:02:44.967+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:04:06.846+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:05:29.953+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:06:28.251+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/1d7adb92] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint started...
+2021-05-19 13:06:29.407+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j/1d7adb92] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint completed in 1s 155ms
+2021-05-19 13:06:29.410+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] [neo4j/1d7adb92] No log version pruned. The strategy used was '7 days'. 
+2021-05-19 13:06:51.722+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:07:51.939+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:10:57.556+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:12:18.750+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:13:40.556+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:15:02.896+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:16:38.503+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:18:57.632+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:20:21.015+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:21:43.938+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:05.950+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:49.969+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:50.286+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:50.309+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:50.323+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:23:50.430+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:24:30.147+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:25:51.556+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:27:11.973+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:28:32.863+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:29:13.876+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:30:36.541+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:31:58.015+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:32:59.374+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:35:18.040+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:36:38.055+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:37:58.061+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:38:08.631+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:39:18.109+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:40:38.107+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:41:59.861+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:43:21.871+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:45:02.368+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:47:47.337+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:48:07.172+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:49:17.798+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:50:30.876+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:51:52.709+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:53:52.801+0000 WARN  [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2021-05-19 13:55:25.859+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5000], control stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 13:55:25.861+0000 WARN  [a.s.s.RestartWithBackoffFlow] Restarting graph due to failure. stack_trace:  (akka.stream.StreamTcpException: The connection has been aborted)
+2021-05-19 13:55:25.867+0000 WARN  [a.s.Materializer] [outbound connection to [akka://cc-discovery-actor-system@localhost:5002], control stream] Upstream failed, cause: StreamTcpException: The connection has been aborted
+2021-05-19 13:55:25.867+0000 WARN  [a.s.s.RestartWithBackoffFlow] Restarting graph due to failure. stack_trace:  (akka.stream.StreamTcpException: The connection has been aborted)

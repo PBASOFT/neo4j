@@ -1,0 +1,17 @@
+2021-05-19 12:15:21.886+0000 INFO  [neo4j]: logged in (password change required)
+2021-05-19 12:15:39.835+0000 INFO  [neo4j]: logged in
+2021-05-19 12:15:39.853+0000 INFO  [neo4j]: logged in
+2021-05-19 12:15:39.887+0000 INFO  [neo4j]: logged in
+2021-05-19 12:16:20.923+0000 INFO  [neo4j]: logged in
+2021-05-19 12:17:41.882+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:17:41.911+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:01.888+0000 ERROR [neo4j]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:01.916+0000 ERROR [neo4j]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:27.270+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:27.301+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:35.548+0000 ERROR [Test]: failed to log in: invalid principal or credentials
+2021-05-19 12:18:35.575+0000 ERROR [Test]: failed to log in: invalid principal or credentials
+2021-05-19 12:20:02.422+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:20:02.451+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:20:18.736+0000 ERROR [test]: failed to log in: invalid principal or credentials
+2021-05-19 12:20:18.757+0000 ERROR [test]: failed to log in: invalid principal or credentials
